@@ -16,7 +16,8 @@ const Contact = () => {
   const onSubmit = async (data) => {
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
+      // ✅ Use your deployed backend URL
+      const response = await fetch("https://be-portfolio-w61v.onrender.com/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -25,14 +26,14 @@ const Contact = () => {
       const result = await response.json();
 
       if (response.ok) {
-        alert("Message sent successfully!");
+        alert("✅ Message sent successfully!");
         reset();
       } else {
-        alert(result.error);
+        alert(result.error || "❌ Failed to send message. Please try again.");
       }
     } catch (error) {
       console.error(error);
-      alert("⚠️ Failed to send message.");
+      alert("⚠️ Network error. Try again later.");
     } finally {
       setLoading(false);
     }
@@ -140,50 +141,6 @@ const Contact = () => {
           </motion.button>
         </form>
       </motion.div>
-
-      {/* 🌐 Social Icons
-      <motion.div
-        className="flex gap-8 mt-10 text-gray-400"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.6 }}
-      >
-        <a
-          href="https://github.com/yourusername"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:text-teal-400 transition transform hover:scale-110"
-        >
-          <Github size={28} />
-        </a>
-        <a
-          href="https://linkedin.com/in/yourlinkedin"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:text-teal-400 transition transform hover:scale-110"
-        >
-          <Linkedin size={28} />
-        </a>
-        <a
-          href="mailto:nathirafarveen99@gmail.com"
-          className="hover:text-teal-400 transition transform hover:scale-110"
-        >
-          <Mail size={28} />
-        </a>
-      </motion.div> */}
-
-      {/* 📄 Resume Button
-      <motion.a
-        href="/NathiraFarveen_Resume.pdf"
-        download="NathiraFarveen_Resume.pdf"
-        className="flex items-center gap-2 bg-gradient-to-r from-teal-500 to-teal-400 text-white mt-8 px-6 py-3 rounded-xl font-semibold shadow-md hover:shadow-teal-400/50 transition-all hover:scale-105"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8 }}
-      >
-        <FileDown size={22} />
-        Download Resume
-      </motion.a> */}
 
       {/* 💌 Direct Email */}
       <motion.p
