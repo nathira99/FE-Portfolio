@@ -19,7 +19,7 @@ const Contact = () => {
       const response = await fetch("https://be-portfolio-w61v.onrender.com/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data), // ✅ fixed here
+        body: JSON.stringify(data),
       });
 
       const result = await response.json();
