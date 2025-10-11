@@ -16,11 +16,10 @@ const Contact = () => {
   const onSubmit = async (data) => {
     setLoading(true);
     try {
-      // ✅ Use your deployed backend URL
       const response = await fetch("https://be-portfolio-w61v.onrender.com/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify(data), // ✅ fixed here
       });
 
       const result = await response.json();
@@ -32,7 +31,7 @@ const Contact = () => {
         alert(result.error || "❌ Failed to send message. Please try again.");
       }
     } catch (error) {
-      console.error(error);
+      console.error("Network Error:", error);
       alert("⚠️ Network error. Try again later.");
     } finally {
       setLoading(false);
@@ -85,9 +84,7 @@ const Contact = () => {
                 minLength: { value: 2, message: "Name must be at least 2 characters" },
               })}
             />
-            {errors.name && (
-              <p className="text-red-400 text-sm mt-1">{errors.name.message}</p>
-            )}
+            {errors.name && <p className="text-red-400 text-sm mt-1">{errors.name.message}</p>}
           </div>
 
           {/* Email */}
@@ -106,9 +103,7 @@ const Contact = () => {
                 },
               })}
             />
-            {errors.email && (
-              <p className="text-red-400 text-sm mt-1">{errors.email.message}</p>
-            )}
+            {errors.email && <p className="text-red-400 text-sm mt-1">{errors.email.message}</p>}
           </div>
 
           {/* Message */}
