@@ -54,7 +54,7 @@ const Home = () => {
         "Tailwind CSS",
       ],
       link: "https://chatapp90.netlify.app/",
-      github: "https://github.com/yourusername/chat-app",
+      github: "https://github.com/nathira99/ChatApp.git",
     },
     {
       title: "Income & Expense Tracker",
@@ -86,7 +86,7 @@ const Home = () => {
         "A mini e-commerce project built using React and React Router. Users can browse products, view details, and manage a shopping cart with real-time updates.",
       tech: ["React", "React Router", "JavaScript", "Tailwind CSS"],
       link: "https://addtocart-router.netlify.app/",
-      github: "https://github.com/yourusername/add-to-cart-project",
+      github: "https://github.com/nathira99/AddToCart-Router.git",
     },
     {
       title: "Ask My Identity - Landing Page",
