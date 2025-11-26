@@ -206,8 +206,13 @@ const Home = () => {
             "Node.js",
             "JavaScript (ES6+)",
             "HTML5",
-            "CSS3 / TailwindCSS",
+            "CSS3",
+            "TailwindCSS",
             "Git & GitHub",
+            "Mongoose",
+            "Socket.io",
+            "Postman",
+            "Responsive UI Design",
           ].map((skill, i) => (
             <motion.div
               key={i}
@@ -410,30 +415,6 @@ const Home = () => {
           </form>
         </motion.div>
 
-        {/* <div className="flex gap-6 mt-10 text-gray-400">
-          <a
-            href="https://linkedin.com/in/nathira99"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-teal-400"
-          >
-            <LinkedinIcon size={26} />
-          </a>
-          <a
-            href="https://github.com/nathira99"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-teal-400"
-          >
-            <Github size={26} />
-          </a>
-          <a
-            href="mailto:nathirafarveen99@gmail.com"
-            className="hover:text-teal-400"
-          >
-            <Mail size={26} />
-          </a>
-        </div> */}
       </section>
     </div>
   );
