@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
-import { Github, Linkedin, Mail, FileDown, Handshake } from "lucide-react";
+import { Handshake } from "lucide-react";
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -16,22 +16,25 @@ const Contact = () => {
   const onSubmit = async (data) => {
     setLoading(true);
     try {
-      const response = await fetch("https://be-portfolio-w61v.onrender.com/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
+      const response = await fetch(
+        "https://be-portfolio-w61v.onrender.com/api/contact",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data), // use 'data' from react-hook-form
+        }
+      );
 
       const result = await response.json();
 
       if (response.ok) {
-        alert("✅ Message sent successfully!");
+        alert("Message sent successfully!");
         reset();
       } else {
-        alert(result.error || "❌ Failed to send message. Please try again.");
+        alert(result.error || "Failed to send message. Please try again.");
       }
     } catch (error) {
-      console.error("Network Error:", error);
+      console.error(error);
       alert("⚠️ Network error. Try again later.");
     } finally {
       setLoading(false);
@@ -40,7 +43,7 @@ const Contact = () => {
 
   return (
     <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-gray-900 via-gray-800 to-black px-6 py-8">
-      {/* 🌟 Header */}
+      {/* Header */}
       <motion.h1
         className="text-4xl md:text-5xl font-extrabold text-white mb-3 text-center"
         initial={{ opacity: 0, y: -20 }}
@@ -60,10 +63,9 @@ const Contact = () => {
         transition={{ delay: 0.3 }}
       >
         Have an idea, opportunity, or just want to say hi? I’d love to hear from you!
-        Let’s collaborate and bring ideas to life.
       </motion.p>
 
-      {/* 📬 Contact Form */}
+      {/* Contact Form */}
       <motion.div
         className="w-full max-w-md backdrop-blur-md bg-white/10 p-8 rounded-3xl shadow-xl border border-white/10"
         initial={{ opacity: 0, y: 30 }}
@@ -119,9 +121,7 @@ const Contact = () => {
                 minLength: { value: 10, message: "Message must be at least 10 characters" },
               })}
             ></textarea>
-            {errors.message && (
-              <p className="text-red-400 text-sm mt-1">{errors.message.message}</p>
-            )}
+            {errors.message && <p className="text-red-400 text-sm mt-1">{errors.message.message}</p>}
           </div>
 
           {/* Submit Button */}
@@ -136,22 +136,6 @@ const Contact = () => {
           </motion.button>
         </form>
       </motion.div>
-
-      {/* 💌 Direct Email */}
-      <motion.p
-        className="mt-6 text-gray-400 text-center text-sm"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.8 }}
-      >
-        Prefer email? Reach me at{" "}
-        <a
-          href="mailto:nathirafarveen99@gmail.com"
-          className="text-teal-400 hover:text-teal-300 underline"
-        >
-          E-Mail
-        </a>
-      </motion.p>
     </section>
   );
 };

@@ -1,16 +1,85 @@
-# React + Vite
+# 🌐 Personal Portfolio — Nathira Farveen
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and beautifully animated portfolio website built using *React, **Tailwind CSS, and **Framer Motion*.  
+This site highlights my skills, projects, and professional profile as a *MERN Stack Developer*.
 
-Currently, two official plugins are available:
+Live Demo: [(https://nathira-portfolio.netlify.app/)]
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+### 🎨 Modern UI & Smooth Animations
+- Fully responsive layout (mobile, tablet, desktop)
+- Clean dark theme with teal accent colors
+- Seamless page transitions using *Framer Motion*
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 📂 Dedicated Sections
+- *Home* — Hero intro with call-to-actions  
+- *About* — Skills, experience, and tech stack  
+- *Projects* — Showcasing top full-stack and frontend projects with live & GitHub links  
+- *Contact* — Validated form + backend email sending (Node.js + Nodemailer)
 
-## Expanding the ESLint configuration
+### 📩 Contact Form with Backend
+- React Hook Form validation  
+- API integration with custom backend  
+- Email sending using *Nodemailer*  
+- MongoDB storage for all contact messages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🧰 Tech Stack
+*Frontend*
+- React  
+- React Router  
+- Tailwind CSS  
+- Framer Motion  
+- Lucide Icons  
+- React Hook Form  
+
+*Backend*
+- Node.js  
+- Express.js  
+- Nodemailer  
+- MongoDB + Mongoose  
+
+---
+
+## 📁 Folder Structure
+
+portfolio/ 
+├── client/ 
+│   ├── src/ 
+│   │   ├── components/ 
+│   │   │   ├── Home.jsx 
+│   │   │   ├── Navbar.jsx 
+│   │   │   └── Footer.jsx 
+│   │   ├── App.jsx 
+│   │   ├── main.jsx 
+│   │   └── index.css 
+│   └── tailwind.config.js 
+│ └── server/ 
+├── controllers/ 
+│   └── contactController.js 
+├── routes/ 
+│   └── contactRoute.js 
+├── models/ 
+│   └── Contact.js 
+├── server.js 
+└── .env
+---
+
+🧑‍💻 Author
+
+Nathira Farveen
+MERN Stack Developer
+
+GitHub: https://github.com/nathira99
+
+LinkedIn: https://www.linkedin.com/in/nathira-farveen-325b88308/
+
+Email: nathirafarveen99@gmail.com
+---
+
+⭐ Show Your Support
+
+If you like this project, please consider giving it a star ⭐ on GitHub.
+---
+---
