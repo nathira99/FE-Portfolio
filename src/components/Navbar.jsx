@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-900 text-gray-100 fixed top-0 left-0 w-full z-50 shadow-md">
+    <nav className="bg-gray-900 -100 fixed top-0 left-0 w-full z-50 shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
 
         {/* Logo */}
@@ -36,7 +36,7 @@ const Navbar = () => {
           {["home", "about", "projects", "contact"].map((section) => (
             <button
               key={section}
-              className="text-lg font-medium text-gray-300 hover:text-teal-400 transition"
+              className="text-lg font-medium text-white hover:text-teal-400 transition"
               onClick={() => scrollToSection(section)}
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}

@@ -158,7 +158,7 @@ const Home = () => {
                 .getElementById("contact")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
-            className="border border-teal-400 text-teal-300 hover:bg-teal-400 hover:text-gray-900 transition py-3 px-6 rounded-xl"
+            className="border border-teal-400 text-white hover:bg-teal-400 hover:text-gray-900 transition py-3 px-6 rounded-xl"
           >
             Contact Me
           </button>
