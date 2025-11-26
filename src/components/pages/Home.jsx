@@ -78,7 +78,7 @@ const Home = () => {
         "Full-stack CRUD application using MongoDB, Express, React, and Node.js. Users can create, view, update and delete recipes with authentication.",
       tech: ["MongoDB", "Express", "React", "Node.js"],
       liveLink: "https://themealsapp.netlify.app/",
-      github: "https://github.com/yourusername/mern-recipe-app",
+      github: "https://github.com/nathira99/foodmakingapp.git",
     },
     {
       title: "Add-to-Cart Product Store",
