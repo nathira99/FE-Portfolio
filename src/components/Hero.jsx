@@ -28,8 +28,8 @@ export default function Hero() {
             target="_blank"
             rel="noreferrer"
             className="px-6 py-3 rounded-lg bg-white border border-zinc-300 dark:border-zinc-700
-                       font-medium text-zinc-700 dark:text-zinc-300
-                       hover:border-violet-400 hover:text-violet-400 transition"
+                       font-medium text-zinc-700 
+                       hover:border-violet-400 hover:text-violet-600 transition"
           >
             View Resume
           </a>
