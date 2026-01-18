@@ -1,51 +1,26 @@
-import { useState } from "react";
-import { UserRound, Menu, X } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
-const Navbar = () => {
-  const [open, setOpen] = useState(false);
-
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setOpen(false);
-    }
-  };
-
+export default function Navbar() {
   return (
-    <nav className="bg-gray-900 -100 fixed top-0 left-0 w-full z-50 shadow-md">
-      <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
-
-        {/* Logo */}
-        <div className="flex items-center gap-2 text-2xl font-bold text-teal-400">
-          <UserRound className="w-6 h-6" />
-          Nathira Farveen
-        </div>
-
-        {/* Mobile Menu Button */}
-        <button className="md:hidden text-white" onClick={() => setOpen(!open)}>
-          {open ? <X size={28} /> : <Menu size={28} />}
-        </button>
-
-        {/* Menu Items */}
-        <div
-          className={`flex-col md:flex-row md:flex gap-6 absolute md:static top-16 left-0 w-full md:w-auto bg-gray-900 md:bg-transparent px-6 md:px-0 py-6 md:py-0 transition-all ${
-            open ? "flex" : "hidden"
-          }`}
-        >
-          {["home", "about", "projects", "contact"].map((section) => (
-            <button
-              key={section}
-              className="text-lg font-medium text-white hover:text-teal-400 transition"
-              onClick={() => scrollToSection(section)}
-            >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
-            </button>
-          ))}
+    <nav className="fixed top-0 w-full z-50 border-b border-zinc-200 dark:border-zinc-800 bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur">
+      <div className="max-w-6xl mx-auto h-16 px-4 md:px-8 flex items-center justify-between">
+        <span className="font-semibold text-xl">Nathira Farveen</span>
+        <div className="flex items-center gap-6 text-sm">
+          <a href="#projects" className="hover:text-violet-400">
+            Projects
+          </a>
+          <a href="#skills" className="hover:text-violet-400">
+            Skills
+          </a>
+          <a href="#certifications" className="hover:text-violet-400">
+            Certifications
+          </a>
+          <a href="#contact" className="hover:text-violet-400">
+            Contact
+          </a>
+          <ThemeToggle />
         </div>
       </div>
     </nav>
   );
-};
-
-export default Navbar;
+}
