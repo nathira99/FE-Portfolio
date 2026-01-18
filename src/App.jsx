@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-zinc-100 text-zinc-800 dark:bg-zinc-950 dark:text-zinc-100 transition-colors">
+    <div className="min-h-screen bg-zinc-100 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 transition-colors">
 
       <Navbar />
       <main className="max-w-6xl mx-auto px-6">

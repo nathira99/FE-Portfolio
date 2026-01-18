@@ -15,7 +15,7 @@ export default function Contact() {
 
         {/* Centered Card */}
         <div>
-          <div className="w-full max-w-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-8 shadow-sm">
+          <div className="w-full max-w-xl bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 rounded-2xl p-8 shadow-lg">
             <form
               action="https://formspree.io/f/xbddgweq"
               method="POST"

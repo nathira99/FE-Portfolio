@@ -1,7 +1,7 @@
 export default function ProjectCard({ project }) {
   return (
     <div
-      className={`bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-8 shadow-sm ${project.featured ? "md:col-span-2 ring-1 ring-violet-500/30" : ""}`}
+      className={`bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 rounded-3xl p-8 shadow-md ${project.featured ? "md:col-span-2 ring-1 ring-violet-500/30" : ""}`}
     >
       <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
 

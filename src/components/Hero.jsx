@@ -27,7 +27,7 @@ export default function Hero() {
             href="https://drive.google.com/file/d/1lJxhnGgOvYnrBjKEP2iqBn9e8SckTI8a/preview"
             target="_blank"
             rel="noreferrer"
-            className="px-6 py-3 rounded-lg border border-zinc-300 dark:border-zinc-700
+            className="px-6 py-3 rounded-lg bg-white border border-zinc-300 dark:border-zinc-700
                        font-medium text-zinc-700 dark:text-zinc-300
                        hover:border-violet-400 hover:text-violet-400 transition"
           >

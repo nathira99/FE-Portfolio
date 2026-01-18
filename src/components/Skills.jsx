@@ -13,7 +13,7 @@ export default function Skills() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {/* Frontend */}
-          <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-6">
+          <div className="bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 rounded-2xl p-6 shadow-lg">
             <h3 className="font-semibold mb-3 text-zinc-900 dark:text-zinc-100">
               Frontend
             </h3>
@@ -27,7 +27,7 @@ export default function Skills() {
           </div>
 
           {/* Backend */}
-          <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-6">
+          <div className="bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 rounded-2xl p-6 shadow-lg">
             <h3 className="font-semibold mb-3 text-zinc-900 dark:text-zinc-100">
               Backend
             </h3>
@@ -41,7 +41,7 @@ export default function Skills() {
           </div>
 
           {/* Database */}
-          <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-6">
+          <div className="bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 rounded-2xl p-6 shadow-lg">
             <h3 className="font-semibold mb-3 text-zinc-900 dark:text-zinc-100">
               Database
             </h3>
@@ -54,7 +54,7 @@ export default function Skills() {
           </div>
 
           {/* Tools & Platforms */}
-          <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-6">
+          <div className="bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 rounded-2xl p-6 shadow-lg">
             <h3 className="font-semibold mb-3 text-zinc-900 dark:text-zinc-100">
               Tools & Platforms
             </h3>
