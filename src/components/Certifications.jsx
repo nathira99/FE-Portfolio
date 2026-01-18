@@ -6,7 +6,7 @@ export default function Certifications() {
           Certifications
         </h2>
 
-        <div className="max-w-3xl bg-white border border-zinc-300 dark:border-zinc-800 shadow-lg rounded-xl p-6">
+        <div className="max-w-3xl bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 shadow-lg rounded-xl p-6">
           <p className="font-medium text-zinc-900 dark:text-zinc-100 mb-1">
             Full Stack Development – GUVI & HCL
           </p>
