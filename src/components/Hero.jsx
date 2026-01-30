@@ -28,7 +28,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="https://drive.google.com/file/d/1lJxhnGgOvYnrBjKEP2iqBn9e8SckTI8a/preview"
+                href="https://drive.google.com/file/d/1eF2HOEFIzdWYqZbih1oLxKyJjpLZ35Kq/preview"
                 target="_blank"
                 rel="noreferrer"
                 className="px-6 py-3 rounded-lg border border-zinc-300 dark:border-zinc-700
