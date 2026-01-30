@@ -6,10 +6,10 @@ export const projects = [
     //   "Full-stack learning platform with secure authentication, role-based access, and protected APIs for managing courses and users.",
     features: [
       "JWT-based authentication & RBAC",
-      "Course & assignment management",
+      "Razorpay integration for course payments",
       "Protected REST APIs",
     ],
-    tech: ["React", "Node.js", "Express.js", "MongoDB", "JWT"],
+    tech: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Payment Gateway"],
     live: "https://learnifyacademy1.netlify.app/",
     source: "https://github.com/nathira99/Learnify-Academy.git",
     featured: true,
