@@ -1,3 +1,5 @@
+import ChatAppImage from "../../public/assets/ChatApp-wndws.png";
+
 export const projects = [
   {
     title: "Real-Time Chat Application",
@@ -11,7 +13,10 @@ export const projects = [
       "MongoDB-backed message persistence",
     ],
     tech: ["React", "Node.js", "Express.js", "MongoDB", "Socket.io"],
-    image: "../../public/assets/ChatApp-wndws.png",
+    image: {
+      src: ChatAppImage,
+      alt: "ChatApp",
+    },
     live: "https://chatapp90.netlify.app/",
     source: "https://github.com/nathira99/ChatApp.git",
     featured: true,
