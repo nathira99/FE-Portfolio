@@ -1,4 +1,6 @@
 import ChatAppImage from "../../public/assets/ChatApp-wndws.png";
+import LearnifyImage from "../../public/assets/learnify-academy.png";
+import TrackerImage from "../../public/assets/expense-tracker.png";
 
 export const projects = [
   {
@@ -36,7 +38,7 @@ export const projects = [
       "JWT",
       "Payment Gateway",
     ],
-    image: "../../public/assets/learnify-academy.png",
+    image: LearnifyImage,
     live: "https://learnifyacademy1.netlify.app/",
     source: "https://github.com/nathira99/Learnify-Academy.git",
     featured: true,
@@ -52,7 +54,7 @@ export const projects = [
       "Monthly summaries and balance tracking",
     ],
     tech: ["React", "Node.js", "Express.js", "MongoDB"],
-    image: "../../public/assets/expense-tracker.png",
+    image: TrackerImage,
     live: "https://smart-expense-tracker-fe.onrender.com/",
     source: "https://github.com/nathira99/FE-Portfolio.git",
     featured: true,
