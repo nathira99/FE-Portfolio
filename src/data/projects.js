@@ -13,7 +13,7 @@ export const projects = [
       "MongoDB-backed message persistence",
     ],
     tech: ["React", "Node.js", "Express.js", "MongoDB", "Socket.io"],
-    image: { ChatAppImage },
+    image: ChatAppImage,
     live: "https://chatapp90.netlify.app/",
     source: "https://github.com/nathira99/ChatApp.git",
     featured: true,
