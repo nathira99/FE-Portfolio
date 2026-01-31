@@ -1,4 +1,4 @@
-import certificateImage from "../../public/assets/guvi certificate.jpeg";
+import certificateImage from "/assets/guvi certificate.jpeg";
 
 export default function Certifications() {
   return (

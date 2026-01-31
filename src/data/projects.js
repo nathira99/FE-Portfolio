@@ -1,6 +1,6 @@
-import ChatAppImage from "../../public/assets/ChatApp-wndws.png";
-import LearnifyImage from "../../public/assets/learnify-academy.png";
-import TrackerImage from "../../public/assets/expense-tracker.png";
+import ChatAppImage from "/assets/ChatApp-wndws.png";
+import LearnifyImage from "/assets/learnify-academy.png";
+import TrackerImage from "/assets/expense-tracker.png";
 
 export const projects = [
   {

@@ -6,9 +6,11 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* Left: Name + Role */}
         <div>
+          <a href="/">
           <p className="text-lg font-semibold text-violet-700 dark:text-violet-400 mb-2">
             Nathira Farveen
           </p>
+          </a>
           <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
             Full Stack MERN Developer — building reliable, secure, and scalable
             web applications.
