@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
   return (
     <section id="projects" className="py-20">
-      <h2 className="text-3xl font-bold tracking-tight mb-2">
+      <h2 className="text-3xl font-semibold tracking-tight mb-2">
         My Projects
       </h2>
 

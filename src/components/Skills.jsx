@@ -1,4 +1,40 @@
+import {
+  Monitor,
+  Server,
+  Database,
+  Wrench,
+  Plug,
+} from "lucide-react";
+
 export default function Skills() {
+  const skills = [
+    {
+      title: "Frontend",
+      icon: Monitor,
+      items: ["React", "JavaScript (ES6+)", "HTML5", "Tailwind CSS"],
+    },
+    {
+      title: "Backend",
+      icon: Server,
+      items: ["Node.js", "Express.js", "REST APIs"],
+    },
+    {
+      title: "Database",
+      icon: Database,
+      items: ["MongoDB", "Mongoose", "MySQL"],
+    },
+    {
+      title: "Tools",
+      icon: Wrench,
+      items: ["Git & GitHub", "Postman", "Netlify", "Render"],
+    },
+    {
+      title: "Integrations",
+      icon: Plug,
+      items: ["JWT Authentication", "Socket.io", "Cloudinary", "Razorpay"],
+    },
+  ];
+
   return (
     <section id="skills" className="py-20">
       <div className="max-w-6xl mx-auto px-6">
@@ -7,65 +43,54 @@ export default function Skills() {
         </h2>
 
         <p className="text-zinc-600 dark:text-zinc-400 mb-12 max-w-2xl">
-          Technologies and capabilities I use to design, build, and deploy
-          full-stack web applications.
+          Technologies and tools I’ve used to build full-stack MERN applications.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {/* Frontend */}
-          <div className="bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 rounded-2xl p-6 shadow-lg">
-            <h3 className="font-semibold mb-3 text-zinc-900 dark:text-zinc-100">
-              Frontend
-            </h3>
-            <ul className="text-sm space-y-1 text-zinc-600 dark:text-zinc-400">
-              <li>React</li>
-              <li>JavaScript (ES6+)</li>
-              <li>Tailwind CSS</li>
-              <li>Responsive UI Development</li>
-              <li>Component-Based Architecture</li>
-            </ul>
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skills.map((group) => {
+            const Icon = group.icon;
 
-          {/* Backend */}
-          <div className="bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 rounded-2xl p-6 shadow-lg">
-            <h3 className="font-semibold mb-3 text-zinc-900 dark:text-zinc-100">
-              Backend
-            </h3>
-            <ul className="text-sm space-y-1 text-zinc-600 dark:text-zinc-400">
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>REST API Design</li>
-              <li>JWT Authentication</li>
-              <li>Role-Based Access Control (RBAC)</li>
-            </ul>
-          </div>
+            return (
+              <div
+                key={group.title}
+                className={`rounded-xl p-6 border
+                  ${
+                    group.highlight
+                      ? "border-violet-300/60 dark:border-violet-500/30 bg-violet-50/40 dark:bg-zinc-900"
+                      : "border-zinc-300 dark:border-zinc-800 bg-white dark:bg-zinc-900"
+                  }`}
+              >
+                {/* Title with icon */}
+                <div className="flex items-center gap-3 mb-4">
+                  <Icon
+                    size={20}
+                    className="text-violet-500 dark:text-violet-400"
+                  />
+                  <h3 className="font-medium text-zinc-900 dark:text-zinc-100">
+                    {group.title}
+                  </h3>
+                </div>
 
-          {/* Database */}
-          <div className="bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 rounded-2xl p-6 shadow-lg">
-            <h3 className="font-semibold mb-3 text-zinc-900 dark:text-zinc-100">
-              Database
-            </h3>
-            <ul className="text-sm space-y-1 text-zinc-600 dark:text-zinc-400">
-              <li>MongoDB</li>
-              <li>Mongoose</li>
-              <li>Schema Design</li>
-              <li>CRUD Operations</li>
-            </ul>
-          </div>
-
-          {/* Tools & Platforms */}
-          <div className="bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 rounded-2xl p-6 shadow-lg">
-            <h3 className="font-semibold mb-3 text-zinc-900 dark:text-zinc-100">
-              Tools & Platforms
-            </h3>
-            <ul className="text-sm space-y-1 text-zinc-600 dark:text-zinc-400">
-              <li>Git & GitHub</li>
-              <li>Postman</li>
-              <li>Socket.io</li>
-              <li>Render</li>
-              <li>Netlify</li>
-            </ul>
-          </div>
+                {/* Pills */}
+                <div className="flex flex-wrap gap-2">
+                  {group.items.map((item) => (
+                    <span
+                      key={item}
+                      className="
+                        text-xs font-medium
+                        px-3 py-1
+                        rounded-full
+                        border border-zinc-300 dark:border-zinc-700
+                        text-zinc-700 dark:text-zinc-300
+                      "
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

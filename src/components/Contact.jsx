@@ -1,3 +1,5 @@
+import { Mail, User } from "lucide-react";
+
 export default function Contact() {
   return (
     <section id="contact" className="pt-20">
@@ -23,8 +25,8 @@ export default function Contact() {
             >
               {/* Name */}
               <div>
-                <label className="block text-sm font-medium mb-1">
-                  Name
+                <label className="flex items-center gap-2 text-sm font-medium mb-1">
+                  <User size={14} /> Name
                 </label>
                 <input
                   type="text"
@@ -42,8 +44,8 @@ export default function Contact() {
 
               {/* Email */}
               <div>
-                <label className="block text-sm font-medium mb-1">
-                  Email
+                <label className="flex items-center gap-2 text-sm font-medium mb-1">
+                 <Mail size={14} /> Email
                 </label>
                 <input
                   type="email"

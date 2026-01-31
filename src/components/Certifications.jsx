@@ -27,10 +27,10 @@ export default function Certifications() {
 
             <div className="flex items-center gap-6">
               <a
-                href="https://drive.google.com/file/d/1lJxhnGgOvYnrBjKEP2iqBn9e8SckTI8a/preview"
+                href="https://drive.google.com/file/d/1UsrHOOUWm9nYBDmM1uQDpunUjwjJLqKi/preview"
                 target="_blank"
                 rel="noreferrer"
-                className="text-md font-medium text-violet-800 dark:text-zinc-400 hover:text-violet-400 transition"
+                className="text-md font-medium text-violet-600 dark:text-violet-400 hover:text-violet-400 transition"
               >
                 View Certificate
               </a>

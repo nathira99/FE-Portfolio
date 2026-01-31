@@ -10,7 +10,7 @@ export default function Hero() {
         ">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-6 text-zinc-900 dark:text-zinc-100">
-              Full Stack MERN Developer
+              Full Stack <span className="text-violet-700 dark:text-violet-400">MERN</span> Developer
             </h1>
 
             <p className="text-lg text-zinc-700 dark:text-zinc-400 leading-relaxed mb-8">
@@ -31,7 +31,7 @@ export default function Hero() {
                 href="https://drive.google.com/file/d/1eF2HOEFIzdWYqZbih1oLxKyJjpLZ35Kq/preview"
                 target="_blank"
                 rel="noreferrer"
-                className="px-6 py-3 rounded-lg border border-zinc-300 dark:border-zinc-700
+                className="px-6 py-3 md:py-2 md:px-4 rounded-lg border border-zinc-300 dark:border-zinc-700
                            font-medium text-zinc-800 dark:text-zinc-300
                            hover:border-violet-400 hover:text-violet-400 transition"
               >
@@ -39,7 +39,7 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm text-zinc-600 dark:text-zinc-400">
+            <div className="border-l-2 border-zinc-300 dark:border-zinc-700 px-4 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm text-zinc-600 dark:text-zinc-400">
               <div>
                 <p className="font-medium text-zinc-900 dark:text-zinc-100">3+</p>
                 <p>Projects</p>
@@ -50,9 +50,9 @@ export default function Hero() {
               </div>
               <div>
                 <p className="font-medium text-zinc-900 dark:text-zinc-100">
-                  JWT & RBAC
+                  250+
                 </p>
-                <p>Authentication</p>
+                <p>DSA problems solved</p>
               </div>
               <div>
                 <p className="font-medium text-zinc-900 dark:text-zinc-100">

@@ -1,3 +1,5 @@
+import { Github, ExternalLink } from "lucide-react"
+
 export default function ProjectCard({ project }) {
   const isFeatured = project.featured;
 
@@ -13,11 +15,12 @@ export default function ProjectCard({ project }) {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
 
         {/* IMAGE — 1/3 */}
-        <div className="md:col-span-1">
+        <div className="md:col-span-1 self-center">
           <img
             src={project.image}
+            href={project.live}
             alt={`${project.title} screenshot`}
-            className="w-full h-64 object-cover rounded-xl border border-zinc-200 dark:border-zinc-800"
+            className="w-full rounded-lg border border-zinc-200 dark:border-zinc-800"
           />
         </div>
 
@@ -58,8 +61,9 @@ export default function ProjectCard({ project }) {
                 href={project.live}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-violet-400 transition"
+                className="flex items-center gap-1 hover:text-violet-400 transition"
               >
+                <ExternalLink size={16} />
                 Live
               </a>
             )}
@@ -68,14 +72,13 @@ export default function ProjectCard({ project }) {
                 href={project.source}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-violet-400 transition"
+                className="flex items-center gap-1 hover:text-violet-400 transition"
               >
-                Source
+                <Github size={16} /> Source
               </a>
             )}
           </div>
         </div>
-
       </div>
     </div>
   );
